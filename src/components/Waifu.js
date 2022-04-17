@@ -1,26 +1,26 @@
 class Waifu {
     constructor(name, age, height) {
-        this.name = name;
-        this.age = age;
-        this.height = height;
+        this._name = name;
+        this._age = age;
+        this._height = height;
     }
-    get waifuName() {
-        return this.name;
+    get name() {
+        return this._name;
     }
-    get waifuAge() {
-        return this.age;
+    get age() {
+        return this._age;
     }
-    get waifuHeight() {
-        return this.height;
+    get height() {
+        return this._height;
     }
-    set waifuName(name) {
-        this.name = name;
+    set name(name) {
+        this._name = name;
     }
-    set waifuAge(age) {
-        this.age = age;
+    set age(age) {
+        this._age = age;
     }
-    set waifuHeight(height) {
-        this.height = height;
+    set height(height) {
+        this._height = height;
     }
 }
 
