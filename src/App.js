@@ -1,9 +1,9 @@
 import logo from './logo.svg';
-import Movie from './components/Movie';
+import Waifu from './components/Waifu';
 import {decorate, observable, action, computed} from 'mobx';
 import './App.css';
 
-decorate(Movie, {
+decorate(Waifu, {
   reviewList: observable,
   addReview: action,
   averageScore: computed,

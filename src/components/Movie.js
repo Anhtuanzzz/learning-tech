@@ -23,12 +23,16 @@ class Movie {
         return this.rating;
     }
     review() {
-        if (this.rating >= 4.5) {
+        if (this.rating >= 4.7) {
+            return 'Rất Hay';
+        }
+        if (this.rating >= 4.0) {
             return 'Hay';
         }
-        else {
+        if (this.rating >= 3.0) {
             return 'Chưa hay';
         }
+        return 'Dở';
     }
 }
 
