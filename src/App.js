@@ -1,23 +1,19 @@
 import logo from './logo.svg';
+import Movie from './components/Movie';
+import {decorate, observable, action, computed} from 'mobx';
 import './App.css';
+
+decorate(Movie, {
+  reviewList: observable,
+  addReview: action,
+  averageScore: computed,
+  reviewCount: computed
+});
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
     </div>
   );
 }
