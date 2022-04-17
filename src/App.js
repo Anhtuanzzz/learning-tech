@@ -5,7 +5,7 @@ import './App.css';
 decorate(Waifu, {
   name: observable,
   age: computed,
-  heigjt: computed
+  height: computed
 });
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <form>
         <label>Waifu's name:</label>
-        <input type = 'text'></input>
+        <input type='text'></input>
       </form>
     </div>
   );
