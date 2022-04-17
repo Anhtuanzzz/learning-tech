@@ -22,6 +22,10 @@ class Waifu {
     set height(height) {
         this._height = height;
     }
+    calcBirthYear() {
+        let year = new Date().getFullYear();
+        return year - this._age;
+    }
 }
 
 export default Waifu;
